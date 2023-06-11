@@ -48,7 +48,7 @@ export const Home: NextPage<iProps> = ({ prop }: iProps) => {
       >
         <div className="max-w-lg text-black-custom dark:text-gray-600">
           <header className="flex justify-between mb-6">
-            <Image src={logo} alt="logo" height="25" />
+            <Image src={logo} alt="logo" height="25" width='0' />
 
             <div className="flex gap-5">
               <div
