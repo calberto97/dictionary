@@ -27,7 +27,7 @@ export const Home: NextPage<iProps> = ({ prop }: iProps) => {
   const [response, setResponse] = useState(prop);
   const [font, setFont] = useState('font-sans');
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   const onSubmit = async (data: iData) => {
     try {
@@ -46,9 +46,9 @@ export const Home: NextPage<iProps> = ({ prop }: iProps) => {
       <div
         className={`${font} ${theme} min-h-screen flex flex-col items-center py-[10%] px-3 bg-white dark:bg-black-custom`}
       >
-        <div className="max-w-lg text-black-custom dark:text-gray-600">
+        <div className="max-w-lg text-black-custom dark:text-gray-600 w-[520px]">
           <header className="flex justify-between mb-6">
-            <Image src={logo} alt="logo" height="25" width='0' />
+            <Image src={logo} alt="logo" height="25" width="0" />
 
             <div className="flex gap-5">
               <div
